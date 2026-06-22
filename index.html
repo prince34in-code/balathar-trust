@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <!--
+    ================================================================
+    PROJECT README - EASY CONTENT EDITING
+    ================================================================
+    All editable website content is stored in the CONTENT object at
+    the top of script.js. You do not need to edit this HTML for routine
+    content updates.
+
+    Trust name:      script.js -> CONTENT.trust.name
+    Phone / email:   script.js -> CONTENT.contact
+    Gallery images:  script.js -> CONTENT.gallery
+    Team members:    script.js -> CONTENT.team
+    Event details:   script.js -> CONTENT.events
+    Statistics:      script.js -> CONTENT.statistics
+    Testimonials:    script.js -> CONTENT.testimonials
+    Bank details:    script.js -> CONTENT.bank
+
+    Keep quotation marks and commas when editing script.js. Add a new
+    card by copying one complete object inside the relevant array.
+    ================================================================
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff6b00">
+  <meta name="description" content="सामूहिक कन्या विवाह बलथर ट्रस्ट जरूरतमंद बेटियों के सम्मानजनक विवाह हेतु समर्पित संस्था है।">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="सामूहिक कन्या विवाह बलथर ट्रस्ट">
+  <meta property="og:description" content="जरूरतमंद बेटियों के सम्मानजनक विवाह हेतु समर्पित">
+  <title>सामूहिक कन्या विवाह बलथर ट्रस्ट | सेवा, सम्मान और सहयोग</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+  <noscript><style>.page-loader{display:none!important}.reveal{opacity:1!important;transform:none!important}body{overflow:auto!important}</style></noscript>
+
+  <!-- LOADING SCREEN -->
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <span class="loader-ring"></span>
+      <svg viewBox="0 0 48 48"><path d="M24 5c3.4 6.7 8.8 10.5 16 11-2 9.7-7.4 17.9-16 25-8.6-7.1-14-15.3-16-25 7.2-.5 12.6-4.3 16-11Z"/><path class="heart" d="M24 30s-8-4.7-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 32 20c0 5.3-8 10-8 10Z"/></svg>
+    </div>
+    <strong data-content="trust.shortName"></strong>
+    <small data-content="trust.tagline"></small>
+  </div>
+
+  <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएं</a>
+
+  <!-- HEADER SECTION -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="होम पेज">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 5c3.4 6.7 8.8 10.5 16 11-2 9.7-7.4 17.9-16 25-8.6-7.1-14-15.3-16-25 7.2-.5 12.6-4.3 16-11Z"/><path class="heart" d="M24 30s-8-4.7-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 32 20c0 5.3-8 10-8 10Z"/></svg>
+        </span>
+        <span><strong data-content="trust.shortName"></strong><small data-content="trust.motto"></small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="मेनू खोलें" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="मुख्य नेविगेशन"></nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" role="img" aria-label="सामूहिक विवाह समारोह"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow hero-eyebrow" data-content="hero.eyebrow"></span>
+        <h1 id="hero-title"><span data-content="hero.title"></span><br><span data-content="trust.shortName"></span></h1>
+        <p data-content="hero.subtitle"></p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#registration">आवेदन करें <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="#contact">संपर्क करें</a></div>
+        <div class="hero-trust" id="hero-trust"></div>
+        <div class="hero-assurance" id="hero-assurance" aria-label="ट्रस्ट की प्रमुख उपलब्धियां"></div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="नीचे जाएं"><span></span></a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow" data-content="about.eyebrow"></span><h2 data-content="about.heading"></h2><p data-content="about.intro"></p></div>
+        <div class="about-intro reveal">
+          <div class="about-image"><img id="about-image" src="" alt="" loading="lazy"><div class="experience-badge"><strong data-content="about.experienceYears"></strong><span data-content="about.experienceText"></span></div></div>
+          <div class="about-copy"><span class="eyebrow" data-content="about.copyEyebrow"></span><h3 data-content="about.title"></h3><p data-content="about.description"></p><div class="mission-row" id="mission-list"></div></div>
+        </div>
+        <div class="feature-grid" id="feature-list"></div>
+      </div>
+    </section>
+
+    <!-- TRUST BADGES SECTION -->
+    <section class="trust-strip" aria-label="विश्वास और पारदर्शिता"><div class="container trust-badges" id="trust-badge-list"></div></section>
+
+    <!-- STATS SECTION -->
+    <section class="stats" aria-label="हमारी उपलब्धियां"><div class="container stats-grid" id="statistics-list"></div></section>
+
+    <!-- ELIGIBILITY SECTION -->
+    <section class="section eligibility" id="eligibility">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">सरल और पारदर्शी</span><h2>पात्रता एवं आवश्यक दस्तावेज</h2><p>आवेदन के समय नीचे दिए गए दस्तावेजों की स्पष्ट प्रतियां साथ रखें।</p></div>
+        <div class="eligibility-layout">
+          <aside class="eligibility-note reveal"><span>पात्रता</span><h3>कौन आवेदन<br>कर सकता है?</h3><ul id="eligibility-list"></ul><a href="#contact">पात्रता संबंधी सहायता →</a></aside>
+          <div class="documents-grid" id="document-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION SECTION -->
+    <section class="section process" id="registration">
+      <div class="container">
+        <div class="section-heading light reveal"><span class="eyebrow">चार आसान चरण</span><h2>आवेदन प्रक्रिया</h2><p>आपके आवेदन से समारोह तक, हमारी टीम हर कदम पर आपके साथ है।</p></div>
+        <div class="timeline" id="process-list"></div>
+        <div class="center reveal"><a class="btn btn-primary" href="#contact">अभी आवेदन करें <span>→</span></a></div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="section gallery" id="gallery">
+      <div class="container"><div class="section-heading reveal"><span class="eyebrow">यादगार पल</span><h2>हमारी गैलरी</h2><p>साथ, संस्कार और मुस्कान से भरे हमारे आयोजनों की कुछ झलकियां।</p></div><div class="gallery-grid" id="gallery-list"></div></div>
+    </section>
+
+    <!-- EVENT SECTION -->
+    <section class="event-section"><div class="container"><div id="event-list"></div></div></section>
+
+    <!-- TEAM SECTION -->
+    <section class="section team" id="team">
+      <div class="container"><div class="section-heading reveal"><span class="eyebrow">समर्पित नेतृत्व</span><h2>ट्रस्ट के सदस्य</h2><p>सेवा भाव, ईमानदारी और अनुभव से संस्था को आगे बढ़ाती हमारी टीम।</p></div><div class="team-grid" id="team-list"></div></div>
+    </section>
+
+    <!-- SUPPORTERS SECTION -->
+    <section class="supporters" aria-labelledby="supporters-title">
+      <div class="container supporters-inner reveal"><div class="supporters-heading"><span class="eyebrow">सामूहिक सहयोग</span><h2 id="supporters-title">हमारे सहयोगी एवं समर्थक</h2><p>समाज सेवा के इस संकल्प में स्थानीय संस्थाएं और समुदाय हमारे साथ हैं।</p></div><div class="supporter-logos" id="supporter-list" aria-label="सहयोगी संस्थाएं"></div><small class="supporter-note">लोगो प्रदर्शन हेतु नमूना स्थान। आधिकारिक सहयोगियों के लोगो प्रकाशन से पहले अनुमति लें।</small></div>
+    </section>
+
+    <!-- DONATION SECTION -->
+    <section class="section donation" id="donate">
+      <div class="container donation-grid">
+        <div class="donation-copy reveal"><span class="eyebrow">आपका सहयोग, किसी की खुशी</span><h2>एक बेटी की नई शुरुआत<br>का हिस्सा बनें</h2><p data-content="donation.description"></p><div class="donation-points" id="donation-points"></div><div class="button-row"><a class="btn btn-primary" href="#bank-details">दान करें</a><a class="btn btn-whatsapp js-whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp संपर्क</a></div></div>
+        <div class="donation-card reveal" id="bank-details"><div class="qr-placeholder" aria-label="क्यूआर कोड प्लेसहोल्डर"><div class="qr-pattern"></div><small>SCAN TO DONATE</small></div><div class="bank-details" id="bank-content"></div></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials" aria-label="लाभार्थियों के अनुभव">
+      <div class="container"><div class="section-heading reveal"><span class="eyebrow">विश्वास की आवाज</span><h2>लोगों ने क्या कहा</h2></div><div class="testimonial-shell reveal"><button class="slider-btn prev" type="button" aria-label="पिछला अनुभव">←</button><div class="testimonial-track" id="testimonial-list"></div><button class="slider-btn next" type="button" aria-label="अगला अनुभव">→</button></div><div class="slider-dots" aria-label="अनुभव चुनें"></div></div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal"><span class="eyebrow">हमसे जुड़ें</span><h2>संपर्क करें</h2><p>आवेदन, सहयोग या आयोजन से जुड़ी जानकारी के लिए हमारी टीम से संपर्क करें।</p><address id="contact-details"></address></div>
+        <form class="contact-form reveal" id="contact-form"><div class="form-heading"><span>संदेश भेजें</span><p>हम जल्द ही आपसे संपर्क करेंगे।</p></div><label for="name">पूरा नाम</label><input id="name" name="name" type="text" placeholder="अपना नाम लिखें" autocomplete="name" required><label for="mobile">मोबाइल नंबर</label><input id="mobile" name="mobile" type="tel" placeholder="10 अंकों का मोबाइल नंबर" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" required><label for="message">आपका संदेश</label><textarea id="message" name="message" rows="4" placeholder="हम आपकी कैसे मदद कर सकते हैं?" required></textarea><button class="btn btn-primary" type="submit">संदेश भेजें <span>→</span></button><p class="form-status" role="status" aria-live="polite"></p></form>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map" aria-label="बलथर ट्रस्ट का स्थान"><iframe id="map-frame" title="ट्रस्ट का नक्शा" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-label"><strong data-content="trust.name"></strong><span data-content="contact.address"></span></div></section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="container footer-cta reveal"><div><span>एक साथ बदलाव की ओर</span><h2>किसी बेटी की नई शुरुआत में सहभागी बनें</h2></div><div><a class="btn btn-primary" href="#donate">सहयोग करें</a><a class="btn btn-footer-outline" href="#contact">स्वयंसेवक बनें</a></div></div>
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5c3.4 6.7 8.8 10.5 16 11-2 9.7-7.4 17.9-16 25-8.6-7.1-14-15.3-16-25 7.2-.5 12.6-4.3 16-11Z"/><path class="heart" d="M24 30s-8-4.7-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 32 20c0 5.3-8 10-8 10Z"/></svg></span><span><strong data-content="trust.shortName"></strong><small data-content="trust.motto"></small></span></a><p data-content="footer.description"></p><div class="socials" id="social-links"></div></div>
+      <div><h3>क्विक लिंक्स</h3><nav class="footer-links" id="footer-primary-links"></nav></div>
+      <div><h3>उपयोगी लिंक्स</h3><nav class="footer-links" id="footer-secondary-links"></nav></div>
+      <div><h3>संपर्क जानकारी</h3><div class="footer-contact" id="footer-contact"></div></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© <span id="copyright-year"></span> <span data-content="trust.name"></span> | All Rights Reserved</p><p data-content="trust.footerMotto"></p></div></div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a class="whatsapp-float js-whatsapp-link" href="#" target="_blank" rel="noopener" aria-label="WhatsApp पर संपर्क करें">◉<span>WhatsApp</span></a>
+  <button class="back-to-top" type="button" aria-label="ऊपर जाएं">↑</button>
+
+  <!-- GALLERY LIGHTBOX -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="चित्र पूर्वावलोकन" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="बंद करें">×</button><img src="" alt=""><p></p></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
