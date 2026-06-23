@@ -1,5 +1,42 @@
 "use strict";
 
+/*
+  ============================================================================
+  MAINTENANCE GUIDE
+  ============================================================================
+  Routine website updates should happen in the CONTENT object below.
+
+  How to change trust name:
+  - Edit CONTENT.trust.name and CONTENT.trust.shortName.
+
+  How to change phone number:
+  - Edit CONTENT.contact.phone for the visible number.
+  - Edit CONTENT.contact.phoneLink for the clickable tel: number.
+
+  How to change WhatsApp number:
+  - Edit CONTENT.contact.whatsapp. Use country code without + or spaces.
+
+  How to update gallery:
+  - Replace files inside assets/images/gallery/.
+  - Update CONTENT.gallery image, alt, caption, and optional size values.
+
+  How to add team members:
+  - Add a new object to CONTENT.team.
+  - Put the member photo in assets/images/team/ and update the image path.
+
+  How to update event details:
+  - Edit CONTENT.events date, day, month, year, title, and location.
+  - The countdown reads CONTENT.events[0].date.
+
+  How to update bank details:
+  - Edit CONTENT.bank accountName, accountNumber, ifsc, and note.
+
+  Tip:
+  - Copy an existing object, paste it below, then update only the text and path.
+    Keep commas between objects.
+  ============================================================================
+*/
+
 // CONFIG DATA
 // -----------------------------------------------------------------------------
 // BEGINNER EDITING GUIDE:
@@ -16,17 +53,17 @@ const CONTENT = {
   },
 
   contact: {
-    phone: "+91 98765 43210",
-    phoneLink: "+919876543210",
-    whatsapp: "919876543210",
+    phone: "+91 93342 25423",
+    phoneLink: "+919334225423",
+    whatsapp: "919334225423",
     email: "contact@balthartrust.org",
     address: "बलथर, पश्चिम चंपारण, बिहार - 845307",
     mapQuery: "Balthar, West Champaran, Bihar"
   },
 
   images: {
-    hero: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=2000&q=88",
-    about: "https://images.unsplash.com/photo-1600685912448-8bc35c141e18?auto=format&fit=crop&w=1000&q=85",
+    hero: "assets/images/hero/hero-ceremony.svg",
+    about: "assets/images/about/about-ceremony.svg",
     aboutAlt: "भारतीय विवाह समारोह में वर-वधू"
   },
 
@@ -46,8 +83,8 @@ const CONTENT = {
     subtitle: "जरूरतमंद बेटियों के सम्मानजनक विवाह हेतु समर्पित",
     trustPoints: ["पूर्ण पारदर्शिता", "सामाजिक सहभागिता", "सम्मानजनक आयोजन"],
     assurances: [
-      { value: "500+", text: "बेटियों का सम्मानजनक विवाह" },
-      { value: "10 वर्ष", text: "विश्वसनीय सामाजिक सेवा" },
+      { value: "8+", text: "बेटियों का सम्मानजनक विवाह" },
+      { value: "3 वर्ष", text: "विश्वसनीय सामाजिक सेवा" },
       { value: "✓", text: "सत्यापित एवं पारदर्शी प्रक्रिया", seal: true }
     ]
   },
@@ -59,7 +96,7 @@ const CONTENT = {
     copyEyebrow: "साथ मिलकर बदलाव",
     title: "हर बेटी का विवाह सम्मान के साथ",
     description: "सामूहिक कन्या विवाह बलथर ट्रस्ट आर्थिक रूप से कमजोर परिवारों की बेटियों के विवाह को गरिमापूर्ण, सुरक्षित और संस्कारपूर्ण बनाने के लिए कार्यरत है। समाज के सहयोग से हम आयोजन, आवश्यक सामग्री और मार्गदर्शन उपलब्ध कराते हैं।",
-    experienceYears: "10+",
+    experienceYears: "3+",
     experienceText: "वर्षों की निस्वार्थ सेवा",
     mission: [
       { icon: "◎", title: "हमारा मिशन", text: "जरूरतमंद परिवारों को विश्वसनीय सहायता और सम्मानजनक मंच देना।" },
@@ -79,11 +116,22 @@ const CONTENT = {
     { icon: "◎", title: "स्थानीय समुदाय का भरोसा", text: "50+ गांवों तक सक्रिय पहुंच" }
   ],
 
+  terms: [
+    {
+      title: "पारदर्शिता",
+      text: "सभी सहयोग और गतिविधियां पारदर्शी तरीके से संचालित की जाती हैं।"
+    },
+    {
+      title: "सम्मान और गोपनीयता",
+      text: "सभी परिवारों की गरिमा और गोपनीयता का पूरा सम्मान किया जाता है।"
+    }
+  ],
+
   statistics: [
-    { value: 500, suffix: "+", label: "विवाह सम्पन्न" },
-    { value: 1000, suffix: "+", label: "परिवार लाभान्वित" },
-    { value: 10, suffix: "+", label: "वर्ष सेवा" },
-    { value: 50, suffix: "+", label: "गांवों तक पहुंच" }
+    { value: 8, suffix: "+", label: "विवाह सम्पन्न" },
+    { value: 16, suffix: "+", label: "परिवार लाभान्वित" },
+    { value: 3, suffix: "+", label: "वर्ष सेवा" },
+    { value: 15, suffix: "+", label: "गांवों तक पहुंच" }
   ],
 
   eligibility: ["आर्थिक रूप से कमजोर परिवार", "कन्या की आयु न्यूनतम 18 वर्ष", "वर की आयु न्यूनतम 21 वर्ष", "स्थानीय सत्यापन अनिवार्य"],
@@ -104,33 +152,33 @@ const CONTENT = {
   ],
 
   gallery: [
-    { image: "https://images.unsplash.com/photo-1604608672516-f1b9b1d37076?auto=format&fit=crop&w=1100&q=80", alt: "विवाह समारोह की सजावट", caption: "सामूहिक विवाह समारोह", size: "wide" },
-    { image: "https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&w=800&q=80", alt: "भारतीय विवाह में वर-वधू", caption: "मंगलमय शुरुआत", size: "tall" },
-    { image: "https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?auto=format&fit=crop&w=800&q=80", alt: "पारंपरिक विवाह के रंग", caption: "खुशियों के रंग" },
-    { image: "https://images.unsplash.com/photo-1592903297149-37fb25202dfa?auto=format&fit=crop&w=800&q=80", alt: "समारोह में शामिल परिवार", caption: "सामाजिक सहभागिता" },
-    { image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=800&q=80", alt: "भारतीय विवाह की रस्म", caption: "पवित्र रस्में" },
-    { image: "https://images.unsplash.com/photo-1597157639073-69284dc0fdaf?auto=format&fit=crop&w=1100&q=80", alt: "विवाह मंडप में परिवार", caption: "एक साथ, एक संकल्प", size: "wide" },
-    { image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=80", alt: "विवाह में हाथों की रस्म", caption: "नई उम्मीद" },
-    { image: "https://images.unsplash.com/photo-1611106211090-8f3c79eb8552?auto=format&fit=crop&w=800&q=80", alt: "विवाह समारोह का भावुक पल", caption: "आशीर्वाद" }
+    { image: "assets/images/gallery/gallery-1.svg", alt: "विवाह समारोह की सजावट", caption: "सामूहिक विवाह समारोह", size: "wide" },
+    { image: "assets/images/gallery/gallery-2.svg", alt: "भारतीय विवाह में वर-वधू", caption: "मंगलमय शुरुआत", size: "tall" },
+    { image: "assets/images/gallery/gallery-3.svg", alt: "पारंपरिक विवाह के रंग", caption: "खुशियों के रंग" },
+    { image: "assets/images/gallery/gallery-4.svg", alt: "समारोह में शामिल परिवार", caption: "सामाजिक सहभागिता" },
+    { image: "assets/images/gallery/gallery-5.svg", alt: "भारतीय विवाह की रस्म", caption: "पवित्र रस्में" },
+    { image: "assets/images/gallery/gallery-6.svg", alt: "विवाह मंडप में परिवार", caption: "एक साथ, एक संकल्प", size: "wide" },
+    { image: "assets/images/gallery/gallery-7.svg", alt: "विवाह में हाथों की रस्म", caption: "नई उम्मीद" },
+    { image: "assets/images/gallery/gallery-8.svg", alt: "विवाह समारोह का भावुक पल", caption: "आशीर्वाद" }
   ],
 
   events: [
-    { date: "2027-02-15T09:00:00+05:30", day: "15", month: "फरवरी", year: "2027", title: "अगला सामूहिक विवाह समारोह", location: "बलथर, पश्चिम चंपारण, बिहार" }
+    { date: "2026-12-05T09:00:00+05:30", day: "05", month: "दिसंबर", year: "2026", title: "अगला सामूहिक विवाह समारोह", location: "शिव मंदिर,बलथर, पश्चिम चंपारण, बिहार" }
   ],
 
   team: [
-    { name: "राजेश कुमार", role: "अध्यक्ष", phone: "+919876543210", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" },
-    { name: "सुनील प्रसाद", role: "सचिव", phone: "+919876543210", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" },
-    { name: "अमित कुमार", role: "कोषाध्यक्ष", phone: "+919876543210", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" },
-    { name: "पूजा देवी", role: "सदस्य", phone: "+919876543210", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" }
+    { name: "प्रमोद कुमार", role: "अध्यक्ष", phone: "+919780895422", image: "assets/images/team/member-1.svg" },
+    { name: "निखिलेश कुमार", role: "सचिव", phone: "+919334225423", image: "assets/images/team/member-2.svg" },
+    { name: "ब्रह्मानंद कुमार", role: "कोषाध्यक्ष", phone: "+919135357954", image: "assets/images/team/member-3.svg" },
+    { name: "प्रकाश बाबू", role: "उपाध्यक्ष", phone: "+917667406439", image: "assets/images/team/member-4.svg" }
   ],
 
   supporters: [
-    { initials: "BS", name: "बलथर सेवा समिति" },
+    { initials: "BS", name: "बलथर जनकल्याण समिति" },
     { initials: "YU", name: "युवा उत्थान मंच" },
-    { initials: "NS", name: "नारी सम्मान समूह" },
-    { initials: "JS", name: "जन सहयोग परिषद" },
-    { initials: "SK", name: "समर्पण कल्याण" }
+    { initials: "NS", name: "नारी सम्मान एवं उत्थान समूह" },
+    { initials: "JS", name: "आपातकाल मदद समूह" },
+    { initials: "SK", name: "समस्या समाधान केंद्र बलथर" }
   ],
 
   donation: {
@@ -146,9 +194,9 @@ const CONTENT = {
   },
 
   testimonials: [
-    { initials: "RK", name: "राम किशोर यादव", location: "मैनाटांड़, पश्चिम चंपारण", feedback: "ट्रस्ट ने हमारी बेटी का विवाह पूरे सम्मान और सुंदर व्यवस्था के साथ कराया। हर चरण में टीम ने परिवार की तरह हमारा साथ दिया।" },
-    { initials: "SD", name: "सावित्री देवी", location: "सिकटा, बिहार", feedback: "आर्थिक कठिनाई के समय यह संस्था हमारे लिए आशा बनी। प्रक्रिया सरल, पारदर्शी और सभी सदस्यों का व्यवहार बहुत सहयोगपूर्ण था।" },
-    { initials: "MA", name: "मो. आरिफ", location: "बलथर, बिहार", feedback: "इस आयोजन में बेटियों को जो सम्मान और अपनापन मिला, वह सराहनीय है। समाज के लिए यह वास्तव में प्रेरणादायक प्रयास है।" }
+    { initials: "RK", name: "बृजकिशोर पटेल", location: "बलथर, पश्चिम चंपारण", feedback: "ट्रस्ट ने हमारी बेटी का विवाह पूरे सम्मान और सुंदर व्यवस्था के साथ कराया। हर चरण में टीम ने परिवार की तरह हमारा साथ दिया।" },
+    { initials: "SD", name: "जवाहिर मंझी", location: "बलथर, पश्चिम चंपारण", feedback: "आर्थिक कठिनाई के समय यह संस्था हमारे लिए आशा बनी। प्रक्रिया सरल, पारदर्शी और सभी सदस्यों का व्यवहार बहुत सहयोगपूर्ण था।" },
+    { initials: "MA", name: "कंचन महतो", location: "बलथर, पश्चिम चंपारण", feedback: "इस आयोजन में बेटियों को जो सम्मान और अपनापन मिला, वह सराहनीय है। समाज के लिए यह वास्तव में प्रेरणादायक प्रयास है।" }
   ],
 
   socialLinks: [
@@ -163,6 +211,8 @@ const CONTENT = {
   }
 };
 
+// HELPERS
+// -----------------------------------------------------------------------------
 // Reusable helpers keep rendering functions short and easy to scan.
 const select = (selector, scope = document) => scope.querySelector(selector);
 const selectAll = (selector, scope = document) => [...scope.querySelectorAll(selector)];
@@ -185,6 +235,9 @@ function bindSimpleContent() {
   select("#copyright-year").textContent = new Date().getFullYear();
 }
 
+// RENDER FUNCTIONS
+// -----------------------------------------------------------------------------
+// These functions build repeated cards from CONTENT arrays.
 function renderSiteContent() {
   setHTML("#primary-nav", CONTENT.navigation.map((item, index) => `<a class="${index === 0 ? "active" : ""}" href="${item.href}">${item.label}</a>`).join(""));
   setHTML("#hero-trust", CONTENT.hero.trustPoints.map((item) => `<span>✓ ${item}</span>`).join(""));
@@ -233,6 +286,8 @@ function renderFooter() {
 bindSimpleContent();
 renderSiteContent();
 
+// UI FEATURES
+// -----------------------------------------------------------------------------
 // Loading screen and event timer use content generated above.
 const pageLoader = select(".page-loader");
 const hideLoader = () => { pageLoader.classList.add("hidden"); document.body.classList.remove("loading"); };
@@ -283,6 +338,8 @@ menuToggle.addEventListener("click", () => {
 });
 selectAll('.primary-nav a, a[href^="#"]').forEach((link) => link.addEventListener("click", closeMenu));
 
+// ANIMATIONS
+// -----------------------------------------------------------------------------
 // COUNTERS
 // -----------------------------------------------------------------------------
 let countersStarted = false;
