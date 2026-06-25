@@ -62,8 +62,8 @@ const CONTENT = {
   },
 
   images: {
-    hero: "assets/images/hero/hero-ceremony.svg",
-    about: "assets/images/about/about-ceremony.svg",
+    hero: "assets/images/hero/hero-ceremony.webp",
+    about: "assets/images/about/about-ceremony.webp",
     aboutAlt: "भारतीय विवाह समारोह में वर-वधू"
   },
 
@@ -113,7 +113,7 @@ const CONTENT = {
     { icon: "✓", title: "पंजीकृत सामाजिक संस्था", text: "नियमों के अनुरूप संचालन" },
     { icon: "₹", title: "पारदर्शी आर्थिक सहयोग", text: "हर योगदान का जिम्मेदार उपयोग" },
     { icon: "♢", title: "सम्मान सर्वोपरि", text: "परिवारों की गरिमा और गोपनीयता" },
-    { icon: "◎", title: "स्थानीय समुदाय का भरोसा", text: "50+ गांवों तक सक्रिय पहुंच" }
+    { icon: "◎", title: "स्थानीय समुदाय का भरोसा", text: "15+ गांवों तक सक्रिय पहुंच" }
   ],
 
   terms: [
