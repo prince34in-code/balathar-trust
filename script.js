@@ -167,11 +167,13 @@ const CONTENT = {
   ],
 
   team: [
-    { name: "प्रमोद कुमार", role: "अध्यक्ष", phone: "+919780895422", image: "assets/images/team/member-1.svg" },
-    { name: "निखिलेश कुमार", role: "सचिव", phone: "+919334225423", image: "assets/images/team/member-2.svg" },
-    { name: "ब्रह्मानंद कुमार", role: "कोषाध्यक्ष", phone: "+919135357954", image: "assets/images/team/member-3.svg" },
-    { name: "प्रकाश बाबू", role: "उपाध्यक्ष", phone: "+917667406439", image: "assets/images/team/member-4.svg" }
-  ],
+  { name: "प्रमोद कुमार", role: "अध्यक्ष", phone: "+919780895422", image: "assets/images/team/member-1.webp" },
+  { name: "निखिलेश कुमार", role: "सचिव", phone: "+919334225423", image: "assets/images/team/member-2.webp" },
+  { name: "ब्रह्मानंद कुमार", role: "कोषाध्यक्ष", phone: "+919135357954", image: "assets/images/team/member-3.webp" },
+  { name: "प्रकाश बाबू", role: "उपाध्यक्ष", phone: "+917667406439", image: "assets/images/team/member-4.webp" },
+  { name: "संजय पटेल", role: "उपकोषाध्यक्ष", phone: "+917667406439", image: "assets/images/team/member-5.webp" },
+  { name: "राजू कुमार", role: "सह सचिव", phone: "+917667406439", image: "assets/images/team/member-6.webp" }
+],
 
   supporters: [
     { initials: "BS", name: "बलथर जनकल्याण समिति" },
