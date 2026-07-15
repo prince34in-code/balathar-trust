@@ -99,13 +99,13 @@ const CONTENT = {
     experienceYears: "3+",
     experienceText: "वर्षों की निस्वार्थ सेवा",
     mission: [
-      { icon: "🎯", title: "हमारा मिशन", text: "जरूरतमंद परिवारों को विश्वसनीय सहायता और सम्मानजनक मंच देना।" },
-      { icon: "🔭", title: "हमारी दृष्टि", text: "ऐसा समाज जहां आर्थिक अभाव किसी बेटी के भविष्य में बाधा न बने।" }
+      { icon: "assets/icons/target.svg", title: "हमारा मिशन", text: "जरूरतमंद परिवारों को विश्वसनीय सहायता और सम्मानजनक मंच देना।" },
+      { icon: "assets/icons/vision.svg", title: "हमारी दृष्टि", text: "ऐसा समाज जहां आर्थिक अभाव किसी बेटी के भविष्य में बाधा न बने।" }
     ],
     features: [
-      { icon: "🚩", title: "उद्देश्य", text: "विवाह योग्य जरूरतमंद कन्याओं को व्यवस्थित और सम्मानपूर्ण सहयोग प्रदान करना।", link: "#eligibility", linkText: "और जानें →" },
-      { icon: "🤝", title: "सेवा", text: "पंजीकरण से आयोजन तक परिवारों का मार्गदर्शन और आवश्यक व्यवस्थाओं में सहायता।", link: "#registration", linkText: "प्रक्रिया देखें →" },
-      { icon: "💖", title: "सामाजिक योगदान", text: "समाज, दानदाताओं और स्वयंसेवकों को एक संवेदनशील उद्देश्य से जोड़ना।", link: "#donate", linkText: "सहयोग करें →" }
+      { icon: "assets/icons/objective.svg", title: "उद्देश्य", text: "विवाह योग्य जरूरतमंद कन्याओं को व्यवस्थित और सम्मानपूर्ण सहयोग प्रदान करना।", link: "#eligibility", linkText: "और जानें →" },
+      { icon: "assets/icons/service.svg", title: "सेवा", text: "पंजीकरण से आयोजन तक परिवारों का मार्गदर्शन और आवश्यक व्यवस्थाओं में सहायता।", link: "#registration", linkText: "प्रक्रिया देखें →" },
+      { icon: "assets/icons/contribution.svg", title: "सामाजिक योगदान", text: "समाज, दानदाताओं और स्वयंसेवकों को एक संवेदनशील उद्देश्य से जोड़ना।", link: "#donate", linkText: "सहयोग करें →" }
     ]
   },
 
@@ -137,29 +137,29 @@ const CONTENT = {
   eligibility: ["आर्थिक रूप से कमजोर परिवार", "कन्या की आयु न्यूनतम 18 वर्ष", "वर की आयु न्यूनतम 21 वर्ष", "स्थानीय सत्यापन अनिवार्य"],
 
   documents: [
-    { icon: "🆔", title: "आधार कार्ड", text: "वर एवं कन्या दोनों का" },
-    { icon: "📄", title: "राशन कार्ड", text: "परिवार की पहचान हेतु" },
-    { icon: "💰", title: "आय प्रमाण पत्र", text: "अद्यतन प्रमाण पत्र" },
-    { icon: "🏠", title: "निवास प्रमाण पत्र", text: "स्थायी पते के लिए" },
-    { icon: "📸", title: "पासपोर्ट फोटो", text: "वर एवं कन्या की फोटो" }
+    { icon: "assets/icons/aadhaar.svg", title: "आधार कार्ड", text: "वर एवं कन्या दोनों का" },
+    { icon: "assets/icons/ration-card.svg", title: "राशन कार्ड", text: "परिवार की पहचान हेतु" },
+    { icon: "assets/icons/income-proof.svg", title: "आय प्रमाण पत्र", text: "अद्यतन प्रमाण पत्र" },
+    { icon: "assets/icons/address-proof.svg", title: "निवास प्रमाण पत्र", text: "स्थायी पते के लिए" },
+    { icon: "assets/icons/photo.svg", title: "पासपोर्ट फोटो", text: "वर एवं कन्या की फोटो" }
   ],
 
   registrationSteps: [
-    { icon: "📝", title: "आवेदन करें", text: "फॉर्म भरें या कार्यालय में संपर्क करें।" },
-    { icon: "📂", title: "दस्तावेज जमा करें", text: "आवश्यक दस्तावेजों की प्रतियां दें।" },
-    { icon: "✅", title: "सत्यापन", text: "ट्रस्ट टीम आवेदन की जांच करेगी।" },
-    { icon: "🎉", title: "विवाह में शामिल हों", text: "निर्धारित समारोह में ससम्मान भाग लें।" }
+    { icon: "assets/icons/form.svg", title: "आवेदन करें", text: "फॉर्म भरें या कार्यालय में संपर्क करें।" },
+    { icon: "assets/icons/documents.svg", title: "दस्तावेज जमा करें", text: "आवश्यक दस्तावेजों की प्रतियां दें।" },
+    { icon: "assets/icons/verification.svg", title: "सत्यापन", text: "ट्रस्ट टीम आवेदन की जांच करेगी।" },
+    { icon: "assets/icons/celebration.svg", title: "विवाह में शामिल हों", text: "निर्धारित समारोह में ससम्मान भाग लें।" }
   ],
 
   gallery: [
-    { image: "assets/images/gallery/gallery-1.svg", alt: "विवाह समारोह की सजावट", caption: "सामूहिक विवाह समारोह", size: "wide" },
-    { image: "assets/images/gallery/gallery-2.svg", alt: "भारतीय विवाह में वर-वधू", caption: "मंगलमय शुरुआत", size: "tall" },
-    { image: "assets/images/gallery/gallery-3.svg", alt: "पारंपरिक विवाह के रंग", caption: "खुशियों के रंग" },
-    { image: "assets/images/gallery/gallery-4.svg", alt: "समारोह में शामिल परिवार", caption: "सामाजिक सहभागिता" },
-    { image: "assets/images/gallery/gallery-5.svg", alt: "भारतीय विवाह की रस्म", caption: "पवित्र रस्में" },
-    { image: "assets/images/gallery/gallery-6.svg", alt: "विवाह मंडप में परिवार", caption: "एक साथ, एक संकल्प", size: "wide" },
-    { image: "assets/images/gallery/gallery-7.svg", alt: "विवाह में हाथों की रस्म", caption: "नई उम्मीद" },
-    { image: "assets/images/gallery/gallery-8.svg", alt: "विवाह समारोह का भावुक पल", caption: "आशीर्वाद" }
+    { image: "assets/images/gallery/gallery-1.webp", alt: "विवाह समारोह की सजावट", caption: "सामूहिक विवाह समारोह", size: "wide" },
+    { image: "assets/images/gallery/gallery-2.webp", alt: "भारतीय विवाह में वर-वधू", caption: "मंगलमय शुरुआत", size: "tall" },
+    { image: "assets/images/gallery/gallery-3.webp", alt: "पारंपरिक विवाह के रंग", caption: "खुशियों के रंग" },
+    { image: "assets/images/gallery/gallery-4.webp", alt: "समारोह में शामिल परिवार", caption: "सामाजिक सहभागिता" },
+    { image: "assets/images/gallery/gallery-5.webp", alt: "भारतीय विवाह की रस्म", caption: "पवित्र रस्में" },
+    { image: "assets/images/gallery/gallery-6.webp", alt: "विवाह मंडप में परिवार", caption: "एक साथ, एक संकल्प", size: "wide" },
+    { image: "assets/images/gallery/gallery-7.webp", alt: "विवाह में हाथों की रस्म", caption: "नई उम्मीद" },
+    { image: "assets/images/gallery/gallery-8.webp", alt: "विवाह समारोह का भावुक पल", caption: "आशीर्वाद" }
   ],
 
   events: [
@@ -202,10 +202,10 @@ const CONTENT = {
   ],
 
   socialLinks: [
-    { label: "Facebook", symbol: "👍", url: "#" },
-    { label: "Instagram", symbol: "📸", url: "#" },
-    { label: "WhatsApp", symbol: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.75 13.96c.25.41.41.83.41 1.25 0 .41-.17.83-.41 1.25-.25.41-.58.75-.92 1s-.75.41-1.17.41c-.41 0-.83-.08-1.25-.25-.41-.17-.75-.33-1.17-.58-.41-.25-.83-.58-1.17-.92s-.67-.75-1-1.17c-.33-.41-.58-.83-.83-1.25s-.41-.92-.41-1.42c0-.41.08-.83.25-1.25.17-.41.41-.75.75-1 .33-.25.67-.41 1-.5.33-.08.58-.17.83-.17.25 0 .5.08.75.17.25.08.41.25.58.41.17.17.25.33.33.5.08.17.17.42.17.67 0 .25-.08.5-.17.67-.08.17-.25.33-.41.5s-.33.25-.5.25c-.17 0-.25-.08-.33-.17-.08-.08-.17-.17-.25-.25-.08-.08-.17-.17-.25-.25-.08-.08-.17-.17-.25-.25h-.08c-.08 0-.17.08-.25.17-.08.08-.17.17-.25.25-.08.08-.17.17-.25.25l-.17.17c-.08.08-.17.17-.25.25-.08.08-.17.17-.25.25-.08.08-.17.17-.17.25s.08.17.17.25c.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.08.25.17.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.1-1.17.41-1.17 1.17-.75 2.33-.5 3.5.58 1.17 1.08 1.75 2.42 1.75 3.92 0 1.5-.58 2.83-1.75 3.92-1.17 1.08-2.5 1.67-4.08 1.67-1.58 0-3-.58-4.17-1.75-1.17-1.17-1.75-2.5-1.75-4.08 0-1.5.58-2.92 1.75-4.08 1.17-1.17 2.5-1.75 4.08-1.75 1.5 0 2.83.58 4.08 1.75Z"/></svg>', url: "whatsapp" },
-    { label: "YouTube", symbol: "▶️", url: "#" }
+    { label: "Facebook", icon: "assets/icons/facebook.svg", url: "#" },
+    { label: "Instagram", icon: "assets/icons/instagram.svg", url: "#" },
+    { label: "WhatsApp", icon: "assets/icons/whatsapp.svg", url: "whatsapp" },
+    { label: "YouTube", icon: "assets/icons/youtube.svg", url: "#" }
   ],
 
   footer: {
@@ -242,20 +242,20 @@ function bindSimpleContent() {
 // These functions build repeated cards from CONTENT arrays.
 function renderSiteContent() {
   setHTML("#primary-nav", CONTENT.navigation.map((item, index) => `<a class="${index === 0 ? "active" : ""}" href="${item.href}">${item.label}</a>`).join(""));
-  setHTML("#hero-trust", CONTENT.hero.trustPoints.map((item) => `<span>✓ ${item}</span>`).join(""));
+  setHTML("#hero-trust", CONTENT.hero.trustPoints.map((item) => `<span><img src="assets/icons/check.svg" alt="Checkmark"> ${item}</span>`).join(""));
   setHTML("#hero-assurance", CONTENT.hero.assurances.map((item) => `<div>${item.seal ? `<span class="assurance-seal">${item.value}</span>` : `<strong>${item.value}</strong>`}<span>${item.text}</span></div>`).join(""));
-  setHTML("#mission-list", CONTENT.about.mission.map((item) => `<div><span class="mini-icon">${item.icon}</span><p><strong>${item.title}</strong>${item.text}</p></div>`).join(""));
-  setHTML("#feature-list", CONTENT.about.features.map((item) => `<article class="feature-card reveal"><span class="card-icon">${item.icon}</span><h3>${item.title}</h3><p>${item.text}</p><a href="${item.link}">${item.linkText}</a></article>`).join(""));
+  setHTML("#mission-list", CONTENT.about.mission.map((item) => `<div><img class="mini-icon" src="${item.icon}" alt=""><p><strong>${item.title}</strong>${item.text}</p></div>`).join(""));
+  setHTML("#feature-list", CONTENT.about.features.map((item) => `<article class="feature-card reveal"><img class="card-icon" src="${item.icon}" alt=""><h3>${item.title}</h3><p>${item.text}</p><a href="${item.link}">${item.linkText}</a></article>`).join(""));
   setHTML("#trust-badge-list", CONTENT.trustBadges.map((item) => `<article class="trust-badge reveal"><span>${item.icon}</span><div><strong>${item.title}</strong><small>${item.text}</small></div></article>`).join(""));
   setHTML("#statistics-list", CONTENT.statistics.map((item) => `<div class="stat reveal"><strong><span class="counter" data-target="${item.value}">0</span>${item.suffix}</strong><span>${item.label}</span></div>`).join(""));
-  setHTML("#eligibility-list", CONTENT.eligibility.map((item) => `<li>${item}</li>`).join(""));
-  setHTML("#document-list", CONTENT.documents.map((item) => `<article class="document-card reveal"><span>${item.icon}</span><h3>${item.title}</h3><p>${item.text}</p></article>`).join(""));
-  setHTML("#process-list", CONTENT.registrationSteps.map((item, index) => `<article class="timeline-step reveal"><span class="step-number">${String(index + 1).padStart(2, "0")}</span><span class="step-icon">${item.icon}</span><h3>${item.title}</h3><p>${item.text}</p></article>`).join(""));
+  setHTML("#eligibility-list", CONTENT.eligibility.map((item) => `<li><img src="assets/icons/check.svg" alt="Checkmark"> ${item}</li>`).join(""));
+  setHTML("#document-list", CONTENT.documents.map((item) => `<article class="document-card reveal"><img src="${item.icon}" alt=""><h3>${item.title}</h3><p>${item.text}</p></article>`).join(""));
+  setHTML("#process-list", CONTENT.registrationSteps.map((item, index) => `<article class="timeline-step reveal"><span class="step-number">${String(index + 1).padStart(2, "0")}</span><img class="step-icon" src="${item.icon}" alt=""><h3>${item.title}</h3><p>${item.text}</p></article>`).join(""));
   setHTML("#gallery-list", CONTENT.gallery.map((item) => `<button class="gallery-item ${item.size ?? ""} reveal" data-caption="${item.caption}" aria-label="${item.caption} बड़ा देखें"><img src="${item.image}" alt="${item.alt}" loading="lazy"><span>${item.caption}</span></button>`).join(""));
   setHTML("#event-list", CONTENT.events.map(renderEvent).join(""));
-  setHTML("#team-list", CONTENT.team.map((member) => `<article class="member-card reveal"><div class="member-photo"><img src="${member.image}" alt="${member.name}, ${member.role}" loading="lazy"></div><div><h3>${member.name}</h3><p>${member.role}</p><a href="tel:${member.phone}" aria-label="${member.name} से फोन पर संपर्क">↗</a></div></article>`).join(""));
+  setHTML("#team-list", CONTENT.team.map((member) => `<article class="member-card reveal"><div class="member-photo"><img src="${member.image}" alt="${member.name}, ${member.role}" loading="lazy"></div><div><h3>${member.name}</h3><p>${member.role}</p><a href="tel:${member.phone}" aria-label="${member.name} से फोन पर संपर्क"><img src="assets/icons/arrow-right.svg" alt="Contact"></a></div></article>`).join(""));
   setHTML("#supporter-list", CONTENT.supporters.map((item) => `<div><span>${item.initials}</span><strong>${item.name}</strong></div>`).join(""));
-  setHTML("#donation-points", CONTENT.donation.points.map((item) => `<span>✓ ${item}</span>`).join(""));
+  setHTML("#donation-points", CONTENT.donation.points.map((item) => `<span><img src="assets/icons/check.svg" alt="Checkmark"> ${item}</span>`).join(""));
   renderBankDetails();
   setHTML("#testimonial-list", CONTENT.testimonials.map((item, index) => `<article class="testimonial ${index === 0 ? "active" : ""}"><div class="quote">“</div><p>${item.feedback}</p><div class="person"><span>${item.initials}</span><div><strong>${item.name}</strong><small>${item.location}</small></div></div></article>`).join(""));
   renderContactDetails();
@@ -263,7 +263,7 @@ function renderSiteContent() {
 }
 
 function renderEvent(event) {
-  return `<article class="event-card reveal"><div class="event-date"><span>${event.day}</span><strong>${event.month}</strong><small>${event.year}</small></div><div class="event-content"><span class="eyebrow">आगामी आयोजन</span><h2>${event.title}</h2><p><span aria-hidden="true">⌖</span> ${event.location}</p></div><div class="event-action"><div class="countdown" data-event-date="${event.date}" aria-label="समारोह शुरू होने में शेष समय"><div><strong data-days>000</strong><span>दिन</span></div><i>:</i><div><strong data-hours>00</strong><span>घंटे</span></div><i>:</i><div><strong data-minutes>00</strong><span>मिनट</span></div><i>:</i><div><strong data-seconds>00</strong><span>सेकंड</span></div></div><a class="btn btn-dark" href="#contact">अधिक जानकारी <span>→</span></a></div></article>`;
+  return `<article class="event-card reveal"><div class="event-date"><span>${event.day}</span><strong>${event.month}</strong><small>${event.year}</small></div><div class="event-content"><span class="eyebrow">आगामी आयोजन</span><h2>${event.title}</h2><p><img src="assets/icons/location.svg" alt="Location" aria-hidden="true"> ${event.location}</p></div><div class="event-action"><div class="countdown" data-event-date="${event.date}" aria-label="समारोह शुरू होने में शेष समय"><div><strong data-days>000</strong><span>दिन</span></div><i>:</i><div><strong data-hours>00</strong><span>घंटे</span></div><i>:</i><div><strong data-minutes>00</strong><span>मिनट</span></div><i>:</i><div><strong data-seconds>00</strong><span>सेकंड</span></div></div><a class="btn btn-dark" href="#contact">अधिक जानकारी <span>→</span></a></div></article>`;
 }
 
 function renderBankDetails() {
@@ -273,7 +273,7 @@ function renderBankDetails() {
 
 function renderContactDetails() {
   const contact = CONTENT.contact;
-  setHTML("#contact-details", `<a href="tel:${contact.phoneLink}"><span>☎</span><div><small>मोबाइल</small><strong>${contact.phone}</strong></div></a><a href="${whatsappUrl}" target="_blank" rel="noopener"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.75 13.96c.25.41.41.83.41 1.25 0 .41-.17.83-.41 1.25-.25.41-.58.75-.92 1s-.75.41-1.17.41c-.41 0-.83-.08-1.25-.25-.41-.17-.75-.33-1.17-.58-.41-.25-.83-.58-1.17-.92s-.67-.75-1-1.17c-.33-.41-.58-.83-.83-1.25s-.41-.92-.41-1.42c0-.41.08-.83.25-1.25.17-.41.41-.75.75-1 .33-.25.67-.41 1-.5.33-.08.58-.17.83-.17.25 0 .5.08.75.17.25.08.41.25.58.41.17.17.25.33.33.5.08.17.17.42.17.67 0 .25-.08.5-.17.67-.08.17-.25.33-.41.5s-.33.25-.5.25c-.17 0-.25-.08-.33-.17-.08-.08-.17-.17-.25-.25-.08-.08-.17-.17-.25-.25-.08-.08-.17-.17-.25-.25h-.08c-.08 0-.17.08-.25.17-.08.08-.17.17-.25.25-.08.08-.17.17-.25.25l-.17.17c-.08.08-.17.17-.25.25-.08.08-.17.17-.25.25-.08.08-.17.17-.17.25s.08.17.17.25c.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.08.25.17.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.17.17.25.25.08.08.1-1.17.41-1.17 1.17-.75 2.33-.5 3.5.58 1.17 1.08 1.75 2.42 1.75 3.92 0 1.5-.58 2.83-1.75 3.92-1.17 1.08-2.5 1.67-4.08 1.67-1.58 0-3-.58-4.17-1.75-1.17-1.17-1.75-2.5-1.75-4.08 0-1.5.58-2.92 1.75-4.08 1.17-1.17 2.5-1.75 4.08-1.75 1.5 0 2.83.58 4.08 1.75Z"/></svg></span><div><small>WhatsApp</small><strong>${contact.phone}</strong></div></a><a href="mailto:${contact.email}"><span>✉</span><div><small>ईमेल</small><strong>${contact.email}</strong></div></a><div><span>⌖</span><div><small>पता</small><strong>${contact.address}</strong></div></div>`);
+  setHTML("#contact-details", `<a href="tel:${contact.phoneLink}"><span><img src="assets/icons/phone.svg" alt="Phone"></span><div><small>मोबाइल</small><strong>${contact.phone}</strong></div></a><a href="${whatsappUrl}" target="_blank" rel="noopener"><span><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></span><div><small>WhatsApp</small><strong>${contact.phone}</strong></div></a><a href="mailto:${contact.email}"><span><img src="assets/icons/email.svg" alt="Email"></span><div><small>ईमेल</small><strong>${contact.email}</strong></div></a><div><span><img src="assets/icons/location.svg" alt="Address"></span><div><small>पता</small><strong>${contact.address}</strong></div></div>`);
 }
 
 function renderFooter() {
@@ -282,7 +282,7 @@ function renderFooter() {
   setHTML("#footer-primary-links", primaryLinks.map((item) => `<a href="${item.href}">${item.label}</a>`).join(""));
   setHTML("#footer-secondary-links", secondaryLinks.map((item) => `<a href="${item.href}">${item.label}</a>`).join(""));
   setHTML("#footer-contact", `<p>${CONTENT.contact.address}</p><a href="tel:${CONTENT.contact.phoneLink}">${CONTENT.contact.phone}</a><a href="mailto:${CONTENT.contact.email}">${CONTENT.contact.email}</a>`);
-  setHTML("#social-links", CONTENT.socialLinks.map((item) => `<a href="${item.url === "whatsapp" ? whatsappUrl : item.url}" aria-label="${item.label}">${item.symbol}</a>`).join(""));
+  setHTML("#social-links", CONTENT.socialLinks.map((item) => `<a href="${item.url === "whatsapp" ? whatsappUrl : item.url}" aria-label="${item.label}"><img src="${item.icon}" alt="${item.label}"></a>`).join(""));
 }
 
 bindSimpleContent();

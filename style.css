@@ -16,9 +16,8 @@ button,input,textarea{font:inherit}
 .site-header.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.09);height:72px}
 .nav-wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:11px;min-width:max-content}
-.brand-mark{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:var(--primary);box-shadow:0 8px 22px rgba(255,107,0,.25)}
-.brand-mark svg{width:33px;fill:#fff}
-.brand-mark .heart{fill:var(--primary);stroke:#fff;stroke-width:1}
+.brand-mark{display:grid;place-items:center;width:48px;height:48px;padding:8px;border-radius:15px;background:var(--primary);box-shadow:0 8px 22px rgba(255,107,0,.25)}
+.brand-mark img{object-fit:contain}
 .brand strong{display:block;font-size:1.13rem;line-height:1.2}
 .brand small{display:block;color:var(--primary);font-size:.68rem;font-weight:700;letter-spacing:.06em;margin-top:3px}
 .primary-nav{display:flex;align-items:center;gap:29px}
@@ -42,14 +41,15 @@ button,input,textarea{font:inherit}
 .hero-actions{display:flex;gap:14px;margin-top:36px;animation:fadeUp .8s .45s both}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:52px;padding:12px 25px;border:1px solid transparent;border-radius:10px;font-weight:700;cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}
 .btn:hover{transform:translateY(-3px)}
-.btn-primary{background:var(--primary);color:#fff;box-shadow:0 12px 30px rgba(255,107,0,.28)}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 12px 30px rgba(255,107,0,.28)}.btn-primary img{width:1em}
 .btn-primary:hover{background:var(--accent)}
 .btn-outline{border-color:rgba(255,255,255,.65);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(6px)}
 .btn-outline:hover{background:#fff;color:var(--dark)}
 .btn-dark{background:var(--dark);color:#fff}
 .btn-whatsapp{background:#e9faf1;color:#16834e}
 .hero-trust{display:flex;gap:24px;margin-top:45px;color:#ddd;font-size:.78rem;animation:fadeUp .8s .55s both}
-.hero-trust span::first-letter{color:var(--primary)}
+.hero-trust span{display:inline-flex;align-items:center;gap:6px}
+.hero-trust img{width:14px;height:14px}
 .scroll-cue{position:absolute;bottom:28px;left:50%;z-index:2;width:28px;height:44px;border:1px solid rgba(255,255,255,.5);border-radius:30px}
 .scroll-cue span{position:absolute;top:8px;left:50%;width:4px;height:7px;background:#fff;border-radius:4px;transform:translateX(-50%);animation:scrollCue 1.8s infinite}
 /* ABOUT */
@@ -70,11 +70,13 @@ button,input,textarea{font:inherit}
 .mission-row>div{display:flex;gap:12px}
 .mission-row p{font-size:.82rem;color:var(--muted)}
 .mission-row strong{display:block;color:var(--dark);font-size:.98rem;margin-bottom:4px}
-.mini-icon{flex:0 0 40px;height:40px;display:grid;place-items:center;background:var(--secondary);color:var(--primary);border-radius:10px;font-size:1.2rem}
+.mini-icon{flex:0 0 40px;height:40px;display:grid;place-items:center;background:var(--secondary);border-radius:10px;padding:8px}
+.mini-icon{flex:0 0 40px;height:40px;display:grid;place-items:center;background:var(--secondary);color:var(--primary);border-radius:10px;padding:8px} /* This rule was duplicated, I'm using the second one */
+.mini-icon img{object-fit:contain}
 .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .feature-card{border:1px solid var(--line);padding:32px;border-radius:var(--radius);background:#fff;transition:.3s}
 .feature-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
-.card-icon{display:grid;place-items:center;width:58px;height:58px;border-radius:16px;background:var(--secondary);font-size:1.6rem;margin-bottom:20px}
+.card-icon{display:grid;place-items:center;width:58px;height:58px;border-radius:16px;background:var(--secondary);margin-bottom:20px;padding:12px;color:var(--primary)}
 .feature-card h3{font-size:1.2rem;margin-bottom:8px}
 .feature-card p{color:var(--muted);font-size:.9rem}
 .feature-card a{display:inline-block;color:var(--primary);font-weight:700;font-size:.82rem;margin-top:18px}
@@ -95,22 +97,23 @@ button,input,textarea{font:inherit}
 .eligibility-note>span{color:#ffad73;font-size:.75rem;font-weight:700;letter-spacing:.15em}
 .eligibility-note h3{font-size:1.9rem;line-height:1.3;margin:10px 0 20px}
 .eligibility-note ul{list-style:none}
-.eligibility-note li{padding:10px 0;border-bottom:1px solid #3a3a3a;font-size:.88rem}
-.eligibility-note li:before{content:"✓";color:var(--primary);margin-right:10px;font-weight:700}
+.eligibility-note li{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #3a3a3a;font-size:.88rem}
+.eligibility-note li img{width:14px;height:14px;flex-shrink:0}
 .eligibility-note a{display:inline-block;color:#ffad73;font-size:.78rem;font-weight:700;margin-top:23px}
 .documents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .document-card{display:flex;flex-direction:column;justify-content:center;min-height:180px;padding:25px;background:#fff;border:1px solid var(--line);border-radius:18px;transition:.3s}
 .document-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(255,107,0,.25)}
-.document-card>span{display:grid;place-items:center;width:45px;height:45px;border-radius:12px;background:var(--secondary);color:var(--primary);font:700 1.2rem Poppins;margin-bottom:15px}
+.document-card>img{width:45px;height:45px;padding:8px;border-radius:12px;background:var(--secondary);margin-bottom:15px;object-fit:contain;color:var(--primary)}
+/* The rule .document-card>img was duplicated. I've merged them and added the color property. */
 .document-card h3{font-size:1rem}
 .document-card p{font-size:.78rem;color:var(--muted);margin-top:3px}
 .process{background:var(--dark);color:#fff}
 .section-heading.light p{color:#aaa}
 .timeline{display:grid;grid-template-columns:repeat(4,1fr);margin:30px 0 46px;position:relative}
 .timeline:before{content:"";position:absolute;top:50px;left:12.5%;right:12.5%;border-top:1px dashed #666}
-.timeline-step{text-align:center;padding:0 25px;position:relative}
+.timeline-step{text-align:center;padding:0 25px;position:relative}.timeline-step img{object-fit:contain}
 .step-number{position:absolute;top:-12px;right:24px;color:#4c4c4c;font:700 3rem Poppins}
-.step-icon{position:relative;z-index:1;display:grid;place-items:center;width:72px;height:72px;margin:14px auto 23px;border:7px solid var(--dark);outline:1px solid #555;border-radius:50%;background:#343434;color:var(--primary);font-size:1.4rem;transition:.3s}
+.step-icon{position:relative;z-index:1;display:grid;place-items:center;width:72px;height:72px;margin:14px auto 23px;border:7px solid var(--dark);outline:1px solid #555;border-radius:50%;background:#343434;color:var(--primary);padding:15px;transition:.3s} /* This rule was duplicated, I'm using the second one */
 .timeline-step:hover .step-icon{background:var(--primary);color:#fff;outline-color:var(--primary);transform:scale(1.08)}
 .timeline-step h3{font-size:1.05rem}
 .timeline-step p{font-size:.78rem;color:#aaa;margin-top:5px}
@@ -134,9 +137,10 @@ button,input,textarea{font:inherit}
 .event-date small{color:var(--muted)}
 .event-content h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:5px 0}
 .event-content p{color:var(--muted)}
-.event-content p span{color:var(--primary)}
+.event-content p{display:inline-flex;align-items:center;gap:6px;color:var(--primary)} /* This rule was duplicated, I'm using the second one */
+.event-content p img{width:16px;height:16px}
 .team{background:#fffcf9}
-.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.team-grid{display:grid;grid-template-columns:repeat(3,minmax(320px,1fr));justify-content:center;gap:32px}
 .member-card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);transition:.3s}
 .member-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
 .member-photo{height:290px;overflow:hidden;background:#eee}
@@ -145,14 +149,16 @@ button,input,textarea{font:inherit}
 .member-card>div:last-child{position:relative;padding:20px 22px}
 .member-card h3{font-size:1.05rem}
 .member-card p{color:var(--primary);font-size:.78rem;font-weight:700}
-.member-card a{position:absolute;right:18px;top:21px;display:grid;place-items:center;width:34px;height:34px;background:var(--secondary);color:var(--primary);border-radius:50%}
+.member-card a{position:absolute;right:18px;top:21px;display:grid;place-items:center;width:34px;height:34px;background:var(--secondary);color:var(--primary);border-radius:50%;padding:8px} /* This rule was duplicated, I'm using the second one */
+.member-card a img{object-fit:contain}
 .donation{background:#fff}
 .donation-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:80px}
 .donation-copy h2{font-size:clamp(2.3rem,4vw,3.5rem);line-height:1.2;margin:13px 0 20px}
 .donation-copy>p{color:var(--muted)}
 .donation-points{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0 30px;font-size:.8rem;font-weight:700}
 .donation-points span{color:#444}
-.donation-points span::first-letter{color:var(--green)}
+.donation-points span{display:inline-flex;align-items:center;gap:6px;color:var(--green)} /* This rule was duplicated, I'm using the second one */
+.donation-points img{width:14px;height:14px}
 .button-row{display:flex;gap:12px}
 .donation-card{display:grid;grid-template-columns:190px 1fr;gap:28px;background:var(--dark);color:#fff;border-radius:var(--radius);padding:35px;box-shadow:var(--shadow)}
 .qr-placeholder{background:#fff;padding:13px;border-radius:12px;text-align:center;color:#222;align-self:start}
@@ -185,8 +191,8 @@ button,input,textarea{font:inherit}
 .contact-info h2{font-size:clamp(2.2rem,4vw,3.3rem);margin:8px 0 12px}
 .contact-info>p{color:var(--muted);max-width:470px}
 .contact-info address{margin-top:30px;font-style:normal}
-.contact-info address>a,.contact-info address>div{display:flex;align-items:center;gap:15px;padding:12px 0}
-.contact-info address>*>span{display:grid;place-items:center;width:42px;height:42px;background:var(--secondary);color:var(--primary);border-radius:11px}
+.contact-info address>a,.contact-info address>div{display:flex;align-items:center;gap:15px;padding:12px 0;color:var(--dark)}
+.contact-info address>*>span{display:grid;place-items:center;width:42px;height:42px;background:var(--secondary);color:var(--primary);border-radius:11px;padding:9px} /* This rule was duplicated, I'm using the second one */
 .contact-info small,.contact-info strong{display:block}
 .contact-info small{color:var(--muted);font-size:.68rem}
 .contact-info strong{font-size:.88rem}
@@ -211,6 +217,7 @@ button,input,textarea{font:inherit}
 .footer-brand>p{color:#999;max-width:340px;font-size:.84rem;margin:21px 0}
 .socials{display:flex;gap:9px}
 .socials a{display:grid;place-items:center;width:35px;height:35px;background:#2b2b2b;border-radius:50%;font:600 .78rem Poppins;transition:.2s}
+.socials a img{width:18px;height:18px;object-fit:contain;color:#fff}
 .socials a:hover{background:var(--primary)}
 .site-footer h3{font-size:.95rem;margin-bottom:18px}
 .footer-links,.footer-contact{display:flex;flex-direction:column;gap:11px}
@@ -218,8 +225,8 @@ button,input,textarea{font:inherit}
 .footer-links a:hover,.footer-contact a:hover{color:var(--primary)}
 .footer-bottom{border-top:1px solid #303030;color:#777;font-size:.7rem}
 .footer-bottom .container{display:flex;justify-content:space-between;padding:20px 0}
-.whatsapp-float{position:fixed;left:24px;bottom:24px;z-index:500;display:flex;align-items:center;gap:8px;background:#20b866;color:#fff;border-radius:40px;padding:13px 17px;box-shadow:0 12px 30px rgba(15,122,70,.3);font:600 .78rem Poppins}
-.whatsapp-float:first-letter{font-size:1.25rem}
+.whatsapp-float{position:fixed;left:24px;bottom:24px;z-index:500;display:flex;align-items:center;gap:8px;background:#20b866;color:#fff;border-radius:40px;padding:13px 17px;box-shadow:0 12px 30px rgba(15,122,70,.3);font:600 .78rem Poppins}.whatsapp-float img{width:22px;height:22px;object-fit:contain;color:#fff}
+.whatsapp-float span:first-letter{font-size:1.25rem}
 .back-to-top{position:fixed;right:24px;bottom:24px;z-index:500;width:45px;height:45px;border:0;border-radius:50%;background:var(--dark);color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.2);opacity:0;visibility:hidden;transform:translateY(10px);cursor:pointer;transition:.3s}
 .back-to-top.visible{opacity:1;visibility:visible;transform:none}
 .lightbox{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;background:rgba(15,10,7,.93);padding:55px 20px;opacity:0;visibility:hidden;transition:.3s}
@@ -242,9 +249,8 @@ to{transform:scale(1.03)}
 @media(max-width:1000px){.primary-nav{gap:17px}
 .about-intro{gap:45px}
 .eligibility-layout{grid-template-columns:280px 1fr}
-.documents-grid{grid-template-columns:repeat(2,1fr)}
-.team-grid{grid-template-columns:repeat(2,1fr)}
-.member-photo{height:360px}
+.documents-grid{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+.member-photo{height:360px}.member-card a img{width:100%;height:100%}
 .donation-grid{gap:35px}
 .donation-card{grid-template-columns:150px 1fr;padding:25px}
 .footer-grid{grid-template-columns:1.2fr 1fr 1fr;gap:40px}
@@ -329,7 +335,7 @@ to{transform:scale(1.03)}
 .event-card{grid-template-columns:1fr;text-align:center;padding:30px 24px;gap:20px}
 .event-date{border-right:0;border-bottom:1px solid #e7cdb7;padding:0 0 18px}
 .event-card .btn{grid-column:auto}
-.team-grid{grid-template-columns:1fr 1fr;gap:10px}
+.team-grid{grid-template-columns:1fr;gap:18px} /* This rule is duplicated below, but is correct for this breakpoint */
 .member-photo{height:220px}
 .member-card>div:last-child{padding:15px}
 .member-card h3{font-size:.9rem}
@@ -379,7 +385,7 @@ body.loading{overflow:hidden}
 .hero-assurance>div{display:flex;align-items:center;gap:11px;padding:15px 20px;border-right:1px solid rgba(255,255,255,.15)}
 .hero-assurance>div:last-child{border:0}
 .hero-assurance strong{font:700 1.15rem Poppins;color:#fff}
-.hero-assurance span{font-size:.67rem;color:#ddd;line-height:1.35}
+.hero-assurance span{font-size:.67rem;color:#ddd;line-height:1.35}.hero-assurance>div>span{display:inline}
 .assurance-seal{display:grid!important;place-items:center;width:31px;height:31px;border-radius:50%;background:var(--primary);color:#fff!important;font-size:1rem!important}
 .trust-strip{position:relative;z-index:3;margin-top:-1px;padding:31px 0;background:#fff;border-bottom:1px solid var(--line)}
 .trust-badges{display:grid;grid-template-columns:repeat(4,1fr)}
@@ -472,7 +478,7 @@ body.loading{overflow:hidden}
 @media(max-width:560px){.hero{min-height:780px;align-items:flex-start;padding-top:105px}
 .hero-assurance{width:100%;display:grid;grid-template-columns:repeat(3,1fr);margin-top:25px}
 .hero-assurance>div{display:block;text-align:center;padding:11px 6px}
-.hero-assurance strong,.assurance-seal{margin:0 auto 4px}
+.hero-assurance strong,.assurance-seal{margin:0 auto 4px}.hero-assurance>div>span{display:block}
 .hero-assurance span{font-size:.56rem}
 .hero-trust{display:none}
 .trust-badges{grid-template-columns:1fr;gap:0}
@@ -553,7 +559,7 @@ h1,h2,h3,p,a,strong,small,span{overflow-wrap:break-word}
 .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:200px}
 .gallery-item,.gallery-item.wide,.gallery-item.tall,.gallery-item:nth-child(4),.gallery-item:nth-child(7),.gallery-item:nth-child(8){grid-column:span 1;grid-row:span 1}
 .gallery-item:first-child,.gallery-item:nth-child(6){grid-column:span 2}
-.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.team-grid{grid-template-columns:1fr}
 .member-photo{height:240px}
 .supporter-logos{grid-template-columns:repeat(2,minmax(0,1fr))}
 .supporter-logos>div:last-child{grid-column:1/-1}
@@ -575,7 +581,7 @@ h1,h2,h3,p,a,strong,small,span{overflow-wrap:break-word}
 .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:155px}
 .gallery-item,.gallery-item.wide,.gallery-item.tall,.gallery-item:nth-child(4),.gallery-item:nth-child(7),.gallery-item:nth-child(8){grid-column:span 1;grid-row:span 1;min-width:0}
 .gallery-item:first-child,.gallery-item:nth-child(6){grid-column:span 2}
-.team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.team-grid{grid-template-columns:1fr;gap:18px}
 .member-photo{height:clamp(180px,52vw,220px)}
 .member-card h3{font-size:.86rem}
 .member-card p{font-size:.7rem}
