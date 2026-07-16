@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>गोपनीयता नीति - सामूहिक कन्या विवाह बलथर ट्रस्ट</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://balthartrust.in/privacy.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7389934407156757" crossorigin="anonymous"></script>
+  <style>
+      :root{--primary:#ff6b00;--dark:#222;--line:#eee5dc;--radius:22px;--container:800px}
+      body{font-family:"Noto Sans Devanagari","Poppins",sans-serif;color:var(--dark);background:#fffaf5;line-height:1.8;margin:0;padding:0}
+      .container{width:min(calc(100% - 40px),var(--container));margin:auto;padding:60px 0}
+      h1,h2{font-weight:600;color:var(--primary);line-height:1.3}
+      h1{font-size:2.5rem;margin-bottom:15px}
+      h2{font-size:1.5rem;margin-top:40px;margin-bottom:10px;border-bottom:2px solid var(--line);padding-bottom:8px}
+      p,li{color:#444}
+      a{color:var(--primary);font-weight:600}
+      .footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--line);text-align:center;font-size:0.9rem}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>गोपनीयता नीति</h1>
+        <p>अंतिम अपडेट: <span id="last-updated"></span></p>
+
+        <p>यह गोपनीयता नीति बताती है कि जब आप हमारी वेबसाइट (https://balthartrust.in/) का उपयोग करते हैं तो सामूहिक कन्या विवाह बलथर ट्रस्ट आपकी जानकारी कैसे एकत्र, उपयोग और प्रकट करता है।</p>
+
+        <h2>जानकारी जो हम एकत्र करते हैं</h2>
+        <p>जब आप हमारे संपर्क फ़ॉर्म का उपयोग करते हैं तो हम व्यक्तिगत जानकारी एकत्र कर सकते हैं, जैसे आपका नाम, मोबाइल नंबर और संदेश।</p>
+
+        <h2>हम आपकी जानकारी का उपयोग कैसे करते हैं</h2>
+        <p>हम आपके प्रश्नों का उत्तर देने और हमारी सेवाओं के बारे में आपसे संवाद करने के लिए एकत्र की गई जानकारी का उपयोग करते हैं।</p>
+
+        <h2>तृतीय-पक्ष विक्रेता और कुकीज़</h2>
+        <ul>
+            <li>हमारी वेबसाइट पर विज्ञापन दिखाने के लिए Google AdSense सहित तृतीय-पक्ष विक्रेता, कुकीज़ का उपयोग करते हैं।</li>
+            <li>Google की DoubleClick DART कुकी का उपयोग इसे और इसके भागीदारों को हमारी साइट और/या इंटरनेट पर अन्य साइटों पर आपकी विज़िट के आधार पर विज्ञापन दिखाने में सक्षम बनाता है।</li>
+            <li>आप <a href="https://adssettings.google.com/authenticated" target="_blank" rel="noopener">Google विज्ञापन सेटिंग्स</a> पर जाकर वैयक्तिकृत विज्ञापनों से ऑप्ट-आउट कर सकते हैं।</li>
+        </ul>
+
+        <h2>आपकी सहमति</h2>
+        <p>हमारी वेबसाइट का उपयोग करके, आप हमारी गोपनीयता नीति के लिए सहमति देते हैं।</p>
+
+        <h2>हमसे संपर्क करें</h2>
+        <p>यदि हमारी गोपनीयता नीति के बारे में आपके कोई प्रश्न हैं, तो कृपया हमारी वेबसाइट पर दिए गए संपर्क विवरण के माध्यम से हमसे संपर्क करें।</p>
+
+        <div class="footer">
+            <a href="/">होम पेज पर वापस जाएं</a>
+            <p>© <span id="copyright-year"></span> सामूहिक कन्या विवाह बलथर ट्रस्ट</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('hi-IN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
+```
+
+#### Code Change: `d:\Balthar\script.js`
+
+I'll now add the "Privacy Policy" link to your website's footer.
+
+```diff
+--- a/d:\Balthar\script.js
++++ b/d:\Balthar\script.js
+@@ -403,7 +403,7 @@
+ 
+ function renderFooter() {
+   const primaryLinks = CONTENT.navigation.slice(1, 5);
+-  const secondaryLinks = [...CONTENT.navigation.slice(5), { label: "सहयोग करें", href: "#donate" }];
++  const secondaryLinks = [...CONTENT.navigation.slice(5), { label: "सहयोग करें", href: "#donate" }, { label: "गोपनीयता नीति", href: "privacy.html" }];
+   setHTML("#footer-primary-links", primaryLinks.map((item) => `<a href="${item.href}">${item.label}</a>`).join(""));
+   setHTML("#footer-secondary-links", secondaryLinks.map((item) => `<a href="${item.href}">${item.label}</a>`).join(""));
+   setHTML("#footer-contact", `<p>${CONTENT.contact.address}</p><a href="tel:${CONTENT.contact.phoneLink}">${CONTENT.contact.phone}</a><a href="mailto:${CONTENT.contact.email}">${CONTENT.contact.email}</a>`);
+
+```
+
+### Step 4: Create the `ads.txt` File
+
+When you use AdSense, creating an `ads.txt` file is highly recommended. It helps prevent ad fraud and can protect your revenue.
+
+#### New File: `d:\Balthar\ads.txt`
+
+```diff
+--- /dev/null
++++ b/d:\Balthar\ads.txt
+@@ -0,0 +1 @@
++google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
+```
+
+**Action:** Replace `pub-XXXXXXXXXXXXXXXX` with your actual AdSense Publisher ID. You can find this ID in your AdSense account.
+
+### Step 5: Technical SEO and Policy Verification
+
+I have reviewed your website's configuration and content.
+
+**What's Correct:**
+*   **`robots.txt` & `sitemap.xml`**: Both are correctly configured to allow Google to crawl your site.
+*   **HTTPS & Canonical Tag**: Your site uses HTTPS and has a correct canonical tag (`<link rel="canonical" href="https://balthartrust.in/">`), which are essential for SEO.
+*   **Meta Tags**: Your title, description, and Open Graph tags are well-written and optimized for your purpose.
+*   **Content Quality**: Your site has unique, valuable content about your non-profit organization. The "About Us" and "Contact" information is excellent, which builds trust.
+
+**Issues That Could Cause AdSense Rejection:**
+1.  **Missing Privacy Policy**: **(Now Fixed)** This is a major requirement. We have created the `privacy.html` page and linked it in the footer.
+2.  **Placeholder Content**: The "Supporters" section contains a note: *"लोगो प्रदर्शन हेतु नमूना स्थान।"* (Sample space for logo display). This can be interpreted as an "under construction" element, which AdSense dislikes.
+
+**Recommendation:**
+To maximize your chances of approval, I suggest removing the placeholder note from the Supporters section.
+
+#### Code Change: `d:\Balthar\index.html`
+
+```diff
+--- a/d:\Balthar\index.html
++++ b/d:\Balthar\index.html
+@@ -194,7 +194,6 @@
+    <section class="supporters" aria-labelledby="supporters-title">
+      <div class="container supporters-inner reveal"><div class="supporters-heading"><span class="eyebrow">सामूहिक सहयोग</span><h2 id="supporters-title">हमारे सहयोगी एवं समर्थक</h2><p>समाज सेवा के इस संकल्प में स्थानीय संस्थाएं और समुदाय हमारे साथ हैं।</p></div><div class="supporter-logos" id="supporter-list" aria-label="सहयोगी संस्थाएं"></div><small class="supporter-note">लोगो प्रदर्शन हेतु नमूना स्थान। आधिकारिक सहयोगियों के लोगो प्रकाशन से पहले अनुमति लें।</small></div>
+    </section>
+    <!-- DONATION SECTION -->
+    <section class="section donation" id="donate">
+      <div class="container donation-grid">
+
+        <div class="donation-copy reveal"><span class="eyebrow">आपका सहयोग, किसी की खुशी</span><h2>एक बेटी की नई शुरुआत<br>का हिस्सा बनें</h2><p data-content="donation.description"></p><div class="donation-points" id="donation-points"></div><div class="button-row"><a class="btn btn-primary" href="#bank-details">दान करें</a><a class="btn btn-whatsapp js-whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp संपर्क</a></div></div>
+        <div class="donation-card reveal" id="bank-details"><div class="qr-placeholder" aria-label="क्यूआर कोड प्लेसहोल्डर"><div class="qr-pattern"></div><small>SCAN TO DONATE</small></div><div class="bank-details" id="bank-content"></div></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section testimonials" aria-label="लाभार्थियों के अनुभव">
+      <div class="container"><div class="section-heading reveal"><span class="eyebrow">विश्वास की आवाज</span><h2>लोगों ने क्या कहा</h2></div><div class="testimonial-shell reveal"><button class="slider-btn prev" type="button" aria-label="पिछला अनुभव">←</button><div class="testimonial-track" id="testimonial-list"></div><button class="slider-btn next" type="button" aria-label="अगला अनुभव">→</button></div><div class="slider-dots" aria-label="अनुभव चुनें"></div></div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal"><span class="eyebrow">हमसे जुड़ें</span><h2>संपर्क करें</h2><p>आवेदन, सहयोग या आयोजन से जुड़ी जानकारी के लिए हमारी टीम से संपर्क करें।</p><address id="contact-details"></address></div>
+        <form class="contact-form reveal" id="contact-form"><div class="form-heading"><span>संदेश भेजें</span><p>हम जल्द ही आपसे संपर्क करेंगे।</p></div><label for="name">पूरा नाम</label><input id="name" name="name" type="text" placeholder="अपना नाम लिखें" autocomplete="name" required><label for="mobile">मोबाइल नंबर</label><input id="mobile" name="mobile" type="tel" placeholder="10 अंकों का मोबाइल नंबर" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" required><label for="message">आपका संदेश</label><textarea id="message" name="message" rows="4" placeholder="हम आपकी कैसे मदद कर सकते हैं?" required></textarea><button class="btn btn-primary" type="submit">संदेश भेजें <span>→</span></button><p class="form-status" role="status" aria-live="polite"></p></form>
+      </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map" aria-label="बलथर ट्रस्ट का स्थान"><iframe id="map-frame" title="ट्रस्ट का नक्शा" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-label"><strong data-content="trust.name"></strong><span data-content="contact.address"></span></div></section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="container footer-cta reveal"><div><span>एक साथ बदलाव की ओर</span><h2>किसी बेटी की नई शुरुआत में सहभागी बनें</h2></div><div><a class="btn btn-primary" href="#donate">सहयोग करें</a><a class="btn btn-footer-outline" href="#contact">स्वयंसेवक बनें</a></div></div>
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="#home"><img class="brand-mark" src="assets/icons/logo.svg" alt="Balthar Trust Logo" aria-hidden="true"><span><strong data-content="trust.shortName"></strong><small data-content="trust.motto"></small></span></a><p data-content="footer.description"></p><div class="socials" id="social-links"></div></div>
+      <div><h3>क्विक लिंक्स</h3><nav class="footer-links" id="footer-primary-links"></nav></div>
+      <div><h3>उपयोगी लिंक्स</h3><nav class="footer-links" id="footer-secondary-links"></nav></div>
+      <div><h3>संपर्क जानकारी</h3><div class="footer-contact" id="footer-contact"></div></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© <span id="copyright-year"></span> <span data-content="trust.name"></span> | All Rights Reserved</p><p data-content="trust.footerMotto"></p></div></div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <a class="whatsapp-float js-whatsapp-link" href="#" target="_blank" rel="noopener" aria-label="WhatsApp पर संपर्क करें"><img src="assets/icons/whatsapp.svg" alt="WhatsApp Icon"><span>WhatsApp</span></a>
+  <button class="back-to-top" type="button" aria-label="ऊपर जाएं">↑</button>
+
+  <!-- GALLERY LIGHTBOX -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="चित्र पूर्वावलोकन" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="बंद करें">×</button><img src="" alt=""><p></p></div>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "सामूहिक कन्या विवाह बलथर ट्रस्ट",
+    "alternateName": "Balthar Trust",
+    "url": "https://balthartrust.in/",
+    "logo": "https://balthartrust.in/assets/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-93342-25423",
+      "contactType": "customer service"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "बलथर",
+      "addressLocality": "पश्चिम चंपारण",
+      "addressRegion": "बिहार",
+      "postalCode": "845307",
+      "addressCountry": "IN"
+    },
+    "sameAs": []
+  }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

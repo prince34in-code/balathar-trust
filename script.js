@@ -234,6 +234,7 @@ function bindSimpleContent() {
   select("#about-image").alt = CONTENT.images.aboutAlt;
   select("#map-frame").src = `https://www.google.com/maps?q=${encodeURIComponent(CONTENT.contact.mapQuery)}&output=embed`;
   selectAll(".js-whatsapp-link").forEach((link) => { link.href = whatsappUrl; });
+  updateStructuredData();
   select("#copyright-year").textContent = new Date().getFullYear();
 }
 
@@ -278,11 +279,23 @@ function renderContactDetails() {
 
 function renderFooter() {
   const primaryLinks = CONTENT.navigation.slice(1, 5);
-  const secondaryLinks = [...CONTENT.navigation.slice(5), { label: "सहयोग करें", href: "#donate" }];
+  const secondaryLinks = [...CONTENT.navigation.slice(5), { label: "सहयोग करें", href: "#donate" }, { label: "गोपनीयता नीति", href: "privacy.html" }];
   setHTML("#footer-primary-links", primaryLinks.map((item) => `<a href="${item.href}">${item.label}</a>`).join(""));
   setHTML("#footer-secondary-links", secondaryLinks.map((item) => `<a href="${item.href}">${item.label}</a>`).join(""));
   setHTML("#footer-contact", `<p>${CONTENT.contact.address}</p><a href="tel:${CONTENT.contact.phoneLink}">${CONTENT.contact.phone}</a><a href="mailto:${CONTENT.contact.email}">${CONTENT.contact.email}</a>`);
-  setHTML("#social-links", CONTENT.socialLinks.map((item) => `<a href="${item.url === "whatsapp" ? whatsappUrl : item.url}" aria-label="${item.label}"><img src="${item.icon}" alt="${item.label}"></a>`).join(""));
+  const socialLinksHTML = CONTENT.socialLinks
+    .filter(item => item.url && item.url !== "#")
+    .map(item => `<a href="${item.url === "whatsapp" ? whatsappUrl : item.url}" target="_blank" rel="noopener" aria-label="${item.label}"><img src="${item.icon}" alt="${item.label}"></a>`)
+    .join("");
+  setHTML("#social-links", socialLinksHTML);
+}
+
+function updateStructuredData() {
+    const sameAsUrls = CONTENT.socialLinks.filter(link => link.url && link.url !== "#" && link.url !== "whatsapp").map(link => link.url);
+    const structuredDataScript = select('script[type="application/ld+json"]');
+    const data = JSON.parse(structuredDataScript.textContent);
+    data.sameAs = sameAsUrls;
+    structuredDataScript.textContent = JSON.stringify(data, null, 2);
 }
 
 bindSimpleContent();
