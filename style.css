@@ -149,6 +149,27 @@ button,input,textarea{font:inherit}
 .member-card>div:last-child{position:relative;padding:20px 22px}
 .member-card h3{font-size:1.05rem}
 .member-card p{color:var(--primary);font-size:.78rem;font-weight:700}
+.team-actions{display:flex;justify-content:center;margin-top:32px}
+.team-actions .btn img{width:18px;height:18px;object-fit:contain;filter:brightness(0) invert(1)}
+.groups-page{min-height:100vh;background:#fffcf9}
+.groups-page-header{background:#fff;border-bottom:1px solid var(--line)}
+.groups-page-header .container{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.groups-page-main{padding:48px 0 60px}
+.groups-page .section-heading{margin-bottom:30px}
+.groups-page .section-heading h1{font-size:2.75rem;line-height:1.2;margin:11px 0 12px}
+.groups-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1000px;margin-inline:auto;list-style:none}
+.group-card{display:flex;align-items:center;gap:18px;min-height:142px;padding:24px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--primary);border-radius:14px;box-shadow:0 8px 24px rgba(69,36,13,.045);transition:transform .25s,box-shadow .25s}
+.group-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.group-card>img,.groups-empty>img{flex:0 0 52px;width:52px;height:52px;padding:12px;object-fit:contain;background:var(--secondary);border-radius:14px}
+.group-card-copy{min-width:0}
+.group-card h2{font-size:1.18rem;line-height:1.35}
+.group-card p{margin-top:5px;color:var(--muted);font-size:.82rem;font-weight:600}
+.group-card-copy>a{display:inline-block;margin-top:8px;color:var(--primary);font-size:.96rem;font-weight:700;overflow-wrap:anywhere}
+.group-card-copy>a:hover{color:var(--accent)}
+.groups-empty{grid-column:1/-1;justify-self:center;display:flex;align-items:center;gap:18px;width:min(100%,640px);min-height:176px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(69,36,13,.06)}
+.groups-empty h2{font-size:1.05rem;color:var(--dark)}
+@media(max-width:900px){.groups-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+@media(max-width:560px){.groups-page-header .container{min-height:70px;gap:10px}.groups-page .brand{min-width:0;gap:8px}.groups-page .brand-mark{width:42px;height:42px}.groups-page .brand strong{font-size:1rem}.groups-page .brand small{font-size:.58rem}.groups-page-header .btn{padding:10px 14px}.groups-page-main{padding:44px 0 52px}.groups-page .section-heading{margin-bottom:24px}.groups-page .section-heading h1{font-size:2rem}.groups-list{grid-template-columns:1fr;gap:14px}.group-card{min-height:120px;padding:18px}.groups-empty{min-height:140px;padding:20px}}
 .member-card a{position:absolute;right:18px;top:21px;display:grid;place-items:center;width:34px;height:34px;background:var(--secondary);color:var(--primary);border-radius:50%;padding:8px} /* This rule was duplicated, I'm using the second one */
 .member-card a img{object-fit:contain}
 .donation{background:#fff}

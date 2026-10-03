@@ -163,7 +163,7 @@ const CONTENT = {
   ],
 
   events: [
-    { date: "2026-12-05T09:00:00+05:30", day: "05", month: "दिसंबर", year: "2026", title: "अगला सामूहिक विवाह समारोह", location: "शिव मंदिर,बलथर, पश्चिम चंपारण, बिहार" }
+    { date: "2026-11-29T09:00:00+05:30", day: "29", month: "नवंबर", year: "2026", title: "अगला सामूहिक विवाह समारोह", location: "शिव मंदिर,बलथर, पश्चिम चंपारण, बिहार" }
   ],
 
   team: [
@@ -171,8 +171,8 @@ const CONTENT = {
   { name: "निखिलेश कुमार", role: "सचिव", phone: "+919334225423", image: "assets/images/team/member-2.webp" },
   { name: "ब्रह्मानंद कुमार", role: "कोषाध्यक्ष", phone: "+919135357954", image: "assets/images/team/member-3.webp" },
   { name: "प्रकाश बाबू", role: "उपाध्यक्ष", phone: "+917667406439", image: "assets/images/team/member-4.webp" },
-  { name: "संजय पटेल", role: "उपकोषाध्यक्ष", phone: "+917667406439", image: "assets/images/team/member-5.webp" },
-  { name: "राजू कुमार", role: "सह सचिव", phone: "+917667406439", image: "assets/images/team/member-6.webp" }
+  { name: "संजय पटेल", role: "उपकोषाध्यक्ष", phone: "+919304880511", image: "assets/images/team/member-5.webp" },
+  { name: "राजू कुमार", role: "सह सचिव", phone: "+916203045474", image: "assets/images/team/member-6.webp" }
 ],
 
   supporters: [
@@ -202,10 +202,10 @@ const CONTENT = {
   ],
 
   socialLinks: [
-    { label: "Facebook", icon: "assets/icons/facebook.svg", url: "#" },
-    { label: "Instagram", icon: "assets/icons/instagram.svg", url: "#" },
+    { label: "Facebook", icon: "assets/icons/facebook.svg", url: "https://www.facebook.com/profile.php?id=61591537480392" },
+    { label: "Instagram", icon: "assets/icons/instagram.svg", url: "https://www.instagram.com/balthartruast" },
     { label: "WhatsApp", icon: "assets/icons/whatsapp.svg", url: "whatsapp" },
-    { label: "YouTube", icon: "assets/icons/youtube.svg", url: "#" }
+    { label: "YouTube", icon: "assets/icons/youtube.svg", url: "https://youtube.com/@balthartrust" }
   ],
 
   footer: {
@@ -285,7 +285,7 @@ function renderFooter() {
   setHTML("#footer-contact", `<p>${CONTENT.contact.address}</p><a href="tel:${CONTENT.contact.phoneLink}">${CONTENT.contact.phone}</a><a href="mailto:${CONTENT.contact.email}">${CONTENT.contact.email}</a>`);
   const socialLinksHTML = CONTENT.socialLinks
     .filter(item => item.url && item.url !== "#")
-    .map(item => `<a href="${item.url === "whatsapp" ? whatsappUrl : item.url}" target="_blank" rel="noopener" aria-label="${item.label}"><img src="${item.icon}" alt="${item.label}"></a>`)
+    .map(item => `<a href="${item.url === "whatsapp" ? whatsappUrl : item.url}" target="_blank" rel="${item.url === "whatsapp" ? "noopener" : "noopener noreferrer"}" aria-label="${item.label}"><img src="${item.icon}" alt="${item.label}"></a>`)
     .join("");
   setHTML("#social-links", socialLinksHTML);
 }
