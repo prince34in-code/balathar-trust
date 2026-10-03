@@ -254,7 +254,7 @@ function renderSiteContent() {
   setHTML("#process-list", CONTENT.registrationSteps.map((item, index) => `<article class="timeline-step reveal"><span class="step-number">${String(index + 1).padStart(2, "0")}</span><img class="step-icon" src="${item.icon}" alt=""><h3>${item.title}</h3><p>${item.text}</p></article>`).join(""));
   setHTML("#gallery-list", CONTENT.gallery.map((item) => `<button class="gallery-item ${item.size ?? ""} reveal" data-caption="${item.caption}" aria-label="${item.caption} बड़ा देखें"><img src="${item.image}" alt="${item.alt}" loading="lazy"><span>${item.caption}</span></button>`).join(""));
   setHTML("#event-list", CONTENT.events.map(renderEvent).join(""));
-  setHTML("#team-list", CONTENT.team.map((member) => `<article class="member-card reveal"><div class="member-photo"><img src="${member.image}" alt="${member.name}, ${member.role}" loading="lazy"></div><div><h3>${member.name}</h3><p>${member.role}</p><a href="tel:${member.phone}" aria-label="${member.name} से फोन पर संपर्क"><img src="assets/icons/arrow-right.svg" alt="Contact"></a></div></article>`).join(""));
+  setHTML("#team-list", CONTENT.team.map((member) => `<article class="member-card reveal"><div class="member-photo"><img src="${member.image}" alt="${member.name}, ${member.role}" loading="lazy"></div><div><h3>${member.name}</h3><p>${member.role}</p><p class="member-phone">${member.phone}</p></div></article>`).join(""));
   setHTML("#supporter-list", CONTENT.supporters.map((item) => `<div><span>${item.initials}</span><strong>${item.name}</strong></div>`).join(""));
   setHTML("#donation-points", CONTENT.donation.points.map((item) => `<span><img src="assets/icons/check.svg" alt="Checkmark"> ${item}</span>`).join(""));
   renderBankDetails();
@@ -472,7 +472,17 @@ select("#contact-form").addEventListener("submit", (event) => {
   const form = event.currentTarget;
   const status = select(".form-status", form);
   if (!form.checkValidity()) { form.reportValidity(); return; }
-  status.textContent = "धन्यवाद! आपका संदेश प्राप्त हो गया है।";
+  const email = form.elements.email?.value.trim();
+  const message = [
+    "Balthar Trust Contact Message",
+    `नाम: ${form.elements.name.value.trim()}`,
+    `मोबाइल: ${form.elements.mobile.value.trim()}`,
+    ...(email ? [`ईमेल: ${email}`] : []),
+    `संदेश: ${form.elements.message.value.trim()}`
+  ].join("\n");
+  const contactWhatsAppUrl = `https://wa.me/${CONTENT.contact.whatsapp}?text=${encodeURIComponent(message)}`;
+  window.open(contactWhatsAppUrl, "_blank", "noopener,noreferrer");
+  status.textContent = "WhatsApp में आपका संदेश तैयार है।";
   form.reset();
   window.setTimeout(() => { status.textContent = ""; }, 5000);
 });

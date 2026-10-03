@@ -149,6 +149,7 @@ button,input,textarea{font:inherit}
 .member-card>div:last-child{position:relative;padding:20px 22px}
 .member-card h3{font-size:1.05rem}
 .member-card p{color:var(--primary);font-size:.78rem;font-weight:700}
+.member-card p.member-phone{margin-top:4px;color:var(--muted);font-size:.8rem;font-weight:500}
 .team-actions{display:flex;justify-content:center;margin-top:32px}
 .team-actions .btn img{width:18px;height:18px;object-fit:contain;filter:brightness(0) invert(1)}
 .groups-page{min-height:100vh;background:#fffcf9}
@@ -170,8 +171,6 @@ button,input,textarea{font:inherit}
 .groups-empty h2{font-size:1.05rem;color:var(--dark)}
 @media(max-width:900px){.groups-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
 @media(max-width:560px){.groups-page-header .container{min-height:70px;gap:10px}.groups-page .brand{min-width:0;gap:8px}.groups-page .brand-mark{width:42px;height:42px}.groups-page .brand strong{font-size:1rem}.groups-page .brand small{font-size:.58rem}.groups-page-header .btn{padding:10px 14px}.groups-page-main{padding:44px 0 52px}.groups-page .section-heading{margin-bottom:24px}.groups-page .section-heading h1{font-size:2rem}.groups-list{grid-template-columns:1fr;gap:14px}.group-card{min-height:120px;padding:18px}.groups-empty{min-height:140px;padding:20px}}
-.member-card a{position:absolute;right:18px;top:21px;display:grid;place-items:center;width:34px;height:34px;background:var(--secondary);color:var(--primary);border-radius:50%;padding:8px} /* This rule was duplicated, I'm using the second one */
-.member-card a img{object-fit:contain}
 .donation{background:#fff}
 .donation-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:80px}
 .donation-copy h2{font-size:clamp(2.3rem,4vw,3.5rem);line-height:1.2;margin:13px 0 20px}
